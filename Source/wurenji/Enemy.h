@@ -20,15 +20,32 @@ public:
 	*/
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="My Mesh")
 	class UStaticMeshComponent* Mesh;
+
+	/*
+	 * 对象销毁时的处理程序
+	 */
+	UFUNCTION()
+	void DestroyHandler(AActor* DestroyedActor);
+
+	/*
+	 * 添加爆炸特效插槽
+	 */
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="My Special Effects")
+	class UParticleSystem* ExplosionParticle;
+
+	/*
+	 * 添加爆炸声音对象
+	 */
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="My Special Effects")
+	class USoundBase* ExplosionSound;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

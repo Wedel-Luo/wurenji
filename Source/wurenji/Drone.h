@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 
+
+#include "Missle.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/Pawn.h"
 #include "Drone.generated.h"
@@ -101,6 +103,18 @@ public:
 	 */
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="My Properties")
 	float PaddleRotateSpeed = 2000.0f;
+
+	/*
+	 * 设置蓝图可编辑的，泛型为Missle的子弹类参数，继承该子弹类的类可以在蓝图中进行切换
+	 */
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="My Properties")
+	TSubclassOf<AMissle> Bullet;
+
+	/*
+	 * 发射方法
+	 */
+	UFUNCTION()
+	void DoFire(); 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

@@ -66,6 +66,15 @@ ADrone::ADrone()
 		UKismetMathLibrary::MakeRotFromX(-this->GetActorForwardVector()/*得到自己朝前的向量，-表示反方向*/));
 }
 
+void ADrone::DoFire()
+{
+	// 获取变换对象，下面的方法需要变换参数，实际上就是导弹生成的位置和方向。
+	FTransform SocketTransform = Mesh->GetSocketTransform(TEXT("FiringSocket"));
+	// 开火实际上就是生成一个导弹对象
+	// 生成对象在世界中，使用世界对象的SpawnActor（生成Actor）方法
+	GetWorld()->SpawnActor<AMissle>(Bullet, SocketTransform);
+}
+
 // Called when the game starts or when spawned
 void ADrone::BeginPlay()
 {
@@ -78,13 +87,13 @@ void ADrone::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	// 当松开按钮时，将上升力恢复到悬停状态
-	if (InputComponent->GetAxisValue(TEXT("Lift")) == 0.0f)
+	if (GetInputAxisValue(TEXT("Lift")) == 0.0f)
 	{
 		UpThruster->ThrustStrength = 980.0f;
 	}
 
 	// 当松开按钮时，将前进力恢复到0
-	if (InputComponent->GetAxisValue(TEXT("Forward")) == 0.0f)
+	if (GetInputAxisValue(TEXT("Forward")) == 0.0f)
 	{
 		ForwardThruster->ThrustStrength = 0.0f;
 	}
@@ -119,6 +128,8 @@ void ADrone::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis(TEXT("Lift"), this, &ADrone::Lift);
 	PlayerInputComponent->BindAxis(TEXT("Forward"), this, &ADrone::Forward);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ADrone::Turn);
+	// 设置动作输入，针对Fire操作，按下绑定键触发，针对本类对象触发，触犯函数为DoFire
+	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ADrone::DoFire);
 }
 
 void ADrone::Lift(float val)
