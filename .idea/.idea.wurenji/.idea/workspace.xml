@@ -5,19 +5,7 @@
     <projectFile>Intermediate/ProjectFiles/UE4.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88caf1e-2bc2-4d76-96ea-fa90ab891340" name="Default Changelist" comment="无人机">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.wurenji/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wurenji/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP/BP_Drone.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/BP_Drone.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Drone/DroneBody_reduced.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Drone/DroneBody_reduced.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Drone/Low-Poly_airship.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Drone/Low-Poly_airship.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Missle/CarrotLowPoly.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Missle/CarrotLowPoly.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MyMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/wurenji/Drone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Drone.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/wurenji/Drone.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Drone.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/wurenji/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/wurenji/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Enemy.h" afterDir="false" />
-    </list>
+    <list default="true" id="b88caf1e-2bc2-4d76-96ea-fa90ab891340" name="Default Changelist" comment="添加发射导弹方法、敌人爆炸特效和音效" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -288,7 +276,7 @@
       <workItem from="1614840815465" duration="1044000" />
       <workItem from="1614855434835" duration="2761000" />
       <workItem from="1615021938995" duration="1284000" />
-      <workItem from="1615123976838" duration="5909000" />
+      <workItem from="1615123976838" duration="6223000" />
     </task>
     <task id="LOCAL-00001" summary="无人机">
       <created>1614745667998</created>
@@ -304,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614745719382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加发射导弹方法、敌人爆炸特效和音效">
+      <created>1615134142939</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615134142940</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +322,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="无人机" />
-    <option name="LAST_COMMIT_MESSAGE" value="无人机" />
+    <MESSAGE value="添加发射导弹方法、敌人爆炸特效和音效" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加发射导弹方法、敌人爆炸特效和音效" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
