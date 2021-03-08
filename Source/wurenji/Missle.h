@@ -30,6 +30,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void OverlapHandler(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	                    int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	/*
+	* 添加爆炸声音对象
+	*/
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="My Special Effects")
+	class USoundBase* MissleSound;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

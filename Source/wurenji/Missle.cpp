@@ -7,6 +7,7 @@
 #include "Enemy.h"
 #include "wurenjiGameModeBase.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AMissle::AMissle()
@@ -62,8 +63,13 @@ void AMissle::OverlapHandler(UPrimitiveComponent* OverlappedComponent, AActor* O
 
 // Called when the game starts or when spawned
 void AMissle::BeginPlay()
-{
+{ 
 	Super::BeginPlay();
+
+	// 设置8s后自动销毁（如果在此期间内未击中敌方单位）
+	this->SetLifeSpan(8.0f);
+	// 全场景播放导弹的声音，0.5倍响度
+	UGameplayStatics::PlaySound2D(this, MissleSound, 0.2f);
 }
 
 // Called every frame

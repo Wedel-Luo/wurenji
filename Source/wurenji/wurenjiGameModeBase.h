@@ -18,6 +18,6 @@ public:
 	/*
 	 * 全局变量：分数
 	 */
-	UPROPERTY()
-	uint32 points;
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
+	int32 points;
 };

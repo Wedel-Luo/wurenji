@@ -5,7 +5,19 @@
     <projectFile>Intermediate/ProjectFiles/UE4.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88caf1e-2bc2-4d76-96ea-fa90ab891340" name="Default Changelist" comment="添加发射导弹方法、敌人爆炸特效和音效" />
+    <list default="true" id="b88caf1e-2bc2-4d76-96ea-fa90ab891340" name="Default Changelist" comment="蓝图编辑了特效和音效">
+      <change afterPath="$PROJECT_DIR$/Source/wurenji/EnemySpawner.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/wurenji/EnemySpawner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.wurenji/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wurenji/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.wurenji/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.wurenji/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP/BP_Missle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/BP_Missle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MyMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MyMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/wurenji/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/wurenji/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/wurenji/Missle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Missle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/wurenji/Missle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/Missle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/wurenji/wurenjiGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/wurenji/wurenjiGameModeBase.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,14 +33,16 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Source/wurenji/Missle.h" />
-      <option value="$PROJECT_DIR$/Source/wurenji/wurenjiGameModeBase.h" />
       <option value="$PROJECT_DIR$/.gitignore" />
-      <option value="$PROJECT_DIR$/Source/wurenji/Missle.cpp" />
       <option value="$PROJECT_DIR$/Source/wurenji/Drone.h" />
       <option value="$PROJECT_DIR$/Source/wurenji/Drone.cpp" />
+      <option value="$PROJECT_DIR$/Source/wurenji/Missle.h" />
       <option value="$PROJECT_DIR$/Source/wurenji/Enemy.h" />
       <option value="$PROJECT_DIR$/Source/wurenji/Enemy.cpp" />
+      <option value="$PROJECT_DIR$/Source/wurenji/Missle.cpp" />
+      <option value="$PROJECT_DIR$/Source/wurenji/EnemySpawner.h" />
+      <option value="$PROJECT_DIR$/Source/wurenji/EnemySpawner.cpp" />
+      <option value="$PROJECT_DIR$/Source/wurenji/wurenjiGameModeBase.h" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1p6zbrjKRIGWTD99A7R37nF9961" />
@@ -38,6 +52,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
@@ -276,7 +291,8 @@
       <workItem from="1614840815465" duration="1044000" />
       <workItem from="1614855434835" duration="2761000" />
       <workItem from="1615021938995" duration="1284000" />
-      <workItem from="1615123976838" duration="6223000" />
+      <workItem from="1615123976838" duration="6600000" />
+      <workItem from="1615209464039" duration="8950000" />
     </task>
     <task id="LOCAL-00001" summary="无人机">
       <created>1614745667998</created>
@@ -299,7 +315,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615134142940</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加发射导弹方法、敌人爆炸特效和音效">
+      <created>1615134648127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615134648127</updated>
+    </task>
+    <task id="LOCAL-00005" summary="蓝图编辑了特效和音效">
+      <created>1615134720403</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615134720403</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +353,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="无人机" />
     <MESSAGE value="添加发射导弹方法、敌人爆炸特效和音效" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加发射导弹方法、敌人爆炸特效和音效" />
+    <MESSAGE value="蓝图编辑了特效和音效" />
+    <option name="LAST_COMMIT_MESSAGE" value="蓝图编辑了特效和音效" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

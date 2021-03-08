@@ -43503,6 +43503,7 @@
       <e p="UE4Game.Target.cs" t="Include" />
     </e>
     <e p="D:\UE4Project\wurenji" t="IncludeFlat">
+      <e p=".gitignore" t="Include" />
       <e p="Config" t="Include">
         <e p="DefaultEditor.ini" t="Include" />
         <e p="DefaultEngine.ini" t="Include" />
@@ -43523,6 +43524,8 @@
           <e p="Drone.h" t="Include" />
           <e p="Enemy.cpp" t="Include" />
           <e p="Enemy.h" t="Include" />
+          <e p="EnemySpawner.cpp" t="Include" />
+          <e p="EnemySpawner.h" t="Include" />
           <e p="Missle.cpp" t="Include" />
           <e p="Missle.h" t="Include" />
           <e p="wurenji.Build.cs" t="Include" />
